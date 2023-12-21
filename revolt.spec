@@ -6,7 +6,7 @@
 
 Summary:	Better desktop integration for Riot.im (not only) for GNOME
 Name: 		revolt
-Version:	0
+Version:	2023.02.16
 Release:	%{?snapshot:0.%{snapshot}.}1
 License:	GPLv3 and CC-BY-SA-3.0
 Group:		Networking/Instant messaging
