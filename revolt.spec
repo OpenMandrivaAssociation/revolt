@@ -7,13 +7,14 @@
 Summary:	Better desktop integration for Riot.im (not only) for GNOME
 Name: 		revolt
 Version:	2023.02.16
-Release:	%{?snapshot:0.%{snapshot}.}1
+Release:	%{?snapshot:0.%{snapshot}.}2
 License:	GPLv3 and CC-BY-SA-3.0
 Group:		Networking/Instant messaging
 URL:		https://github.com/aperezdc/revolt/
 #Source0:	https://github.com/aperezdc/%{name}/%{version}/%{name}-%{version}.tar.gz
 #Source0:	https://github.com/aperezdc/%{name}/archive/%{?snapshot:master}%{!?snapshot:%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:%{version}}.tar.gz
 Source0:	https://github.com/aperezdc/%{name}/archive/%{?snapshot:%{commit}}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:%{commit}}%{!?snapshot:%{version}}.tar.gz
+Patch0:		revolt-2023.02.16-webkit_version.patch
 BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(gobject-2.0)
 BuildRequires:	python%{pyver}dist(pygobject)
